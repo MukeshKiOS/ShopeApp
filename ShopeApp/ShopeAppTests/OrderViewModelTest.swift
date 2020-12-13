@@ -10,7 +10,14 @@ import XCTest
 
 class OrderViewModelTest: XCTestCase {
 
+    var sut: OrderData!
+    let productName = "Smart phone"
+    let quantity = 10
+    let price = 1000
+    let stateCode = "TX"
+    
     override func setUp() {
+    
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 

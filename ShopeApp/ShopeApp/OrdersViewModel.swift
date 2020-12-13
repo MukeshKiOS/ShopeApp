@@ -30,6 +30,13 @@ class OrderValidationError: Error {
 
     }
 
+    
+func calculateForSummary(price: Double, quantiy: Double, stateCode: String ) -> Double {
+    let tPrice = price * quantiy
+    return priceWithDiscount(totalPrice: tPrice, stateCode: stateCode)
+    }
+
+
 enum VaildatorFactory {
     static func validatorFor(type: OrderValidatorType) -> ValidatorConvertible {
         switch type {
@@ -116,4 +123,38 @@ class QuantityValidator: ValidatorConvertible {
             return value
         }
     }
+    
+    func priceWithDiscount(totalPrice: Double, stateCode: String)-> Double {
+        var result: Double = 0
+        if(totalPrice > 50000){
+            result = ((1-0.15) * totalPrice)
+        }
+        else if(totalPrice > 10000){
+            result = ((1-0.10) * totalPrice)
+        }else if(totalPrice > 7000){
+            result = ((1-0.07) * totalPrice)
+        }else if(totalPrice > 5000){
+            result = ((1-0.05) * totalPrice)
+        }else if(totalPrice > 3000){
+            result = ((1-0.03) * totalPrice)
+        }
+        print("\(result) is the discounted amount")
+    return finalPriceWithTax(totalPrice: result, stateCode: stateCode)
+    }
 
+ func finalPriceWithTax(totalPrice: Double, stateCode: String)-> Double {
+        var fResult: Double = 0
+        if(stateCode ==  "UT"){
+            fResult = ((1+0.0685) * totalPrice)
+        }else if(stateCode ==  "NV"){
+            fResult = ((1+0.08) * totalPrice)
+        }else if(stateCode ==  "TX"){
+            fResult = ((1+0.0625) * totalPrice)
+        }else if(stateCode ==  "AL"){
+            fResult = ((1+0.040) * totalPrice)
+        }else if(stateCode ==  "CA"){
+            fResult = ((1+0.0825) * totalPrice)
+        }
+        print("\(fResult.rounded()) is the amount with tax")
+        return fResult.rounded()
+    }

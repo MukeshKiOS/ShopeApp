@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     }
     @IBAction func ValidateAddToCart(_ sender: Any) {
         validate()
-        orderSummaryLbl.isHidden = false
+        
     }
     func showAlert(for alert: String) {
               let alertController = UIAlertController(title: nil, message: alert, preferredStyle: UIAlertController.Style.alert )
@@ -50,6 +50,10 @@ class ViewController: UIViewController {
           }
           
           func save(_ data: OrderData) {
+            let finalPrice =  calculateForSummary(price: Double(data.price), quantiy: Double(data.quantity), stateCode: data.stateCode)
+            print(finalPrice)
+            orderDetailsLbl.text = "For state code : \(String(describing: stateCodeTextField.text!))The \(String(describing: nameTextField.text!)) with quantity: \(String(describing: quantityTextField.text!)) will cost after discount including Tax = \(finalPrice)"
+            orderSummaryLbl.isHidden = false
                showAlert(for: "Order Placed Successfully ")
            }
     }
