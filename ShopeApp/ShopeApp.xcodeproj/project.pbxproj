@@ -17,6 +17,8 @@
 		1896A1762585E8FA006E8B4B /* OrderModelDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A1752585E8FA006E8B4B /* OrderModelDataTest.swift */; };
 		1896A17D2585E950006E8B4B /* OrderModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A17C2585E950006E8B4B /* OrderModelData.swift */; };
 		1896A1802585F51D006E8B4B /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A17F2585F51D006E8B4B /* OrderViewModel.swift */; };
+		1896A18225860884006E8B4B /* OrderViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A18125860884006E8B4B /* OrderViewModelTest.swift */; };
+		1896A18525861FC9006E8B4B /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A18425861FC9006E8B4B /* UITextField+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		1896A1752585E8FA006E8B4B /* OrderModelDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModelDataTest.swift; sourceTree = "<group>"; };
 		1896A17C2585E950006E8B4B /* OrderModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModelData.swift; sourceTree = "<group>"; };
 		1896A17F2585F51D006E8B4B /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		1896A18125860884006E8B4B /* OrderViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModelTest.swift; sourceTree = "<group>"; };
+		1896A18425861FC9006E8B4B /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		1896A1422585DEA9006E8B4B = {
 			isa = PBXGroup;
 			children = (
+				1896A18325861F9A006E8B4B /* Extensions */,
 				1896A17E2585F4E1006E8B4B /* ViewModel */,
 				1896A17B2585E938006E8B4B /* Model */,
 				1896A14D2585DEA9006E8B4B /* ShopeApp */,
@@ -103,6 +108,7 @@
 			children = (
 				1896A1652585DEAD006E8B4B /* ShopeAppTests.swift */,
 				1896A1752585E8FA006E8B4B /* OrderModelDataTest.swift */,
+				1896A18125860884006E8B4B /* OrderViewModelTest.swift */,
 				1896A1672585DEAD006E8B4B /* Info.plist */,
 			);
 			path = ShopeAppTests;
@@ -122,6 +128,14 @@
 				1896A17F2585F51D006E8B4B /* OrderViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1896A18325861F9A006E8B4B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1896A18425861FC9006E8B4B /* UITextField+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +250,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1896A1762585E8FA006E8B4B /* OrderModelDataTest.swift in Sources */,
+				1896A18225860884006E8B4B /* OrderViewModelTest.swift in Sources */,
 				1896A1662585DEAD006E8B4B /* ShopeAppTests.swift in Sources */,
+				1896A18525861FC9006E8B4B /* UITextField+Extensions.swift in Sources */,
 				1896A17D2585E950006E8B4B /* OrderModelData.swift in Sources */,
 				1896A1802585F51D006E8B4B /* OrderViewModel.swift in Sources */,
 			);
