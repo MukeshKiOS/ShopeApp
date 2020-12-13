@@ -16,6 +16,7 @@
 		1896A1662585DEAD006E8B4B /* ShopeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A1652585DEAD006E8B4B /* ShopeAppTests.swift */; };
 		1896A1762585E8FA006E8B4B /* OrderModelDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A1752585E8FA006E8B4B /* OrderModelDataTest.swift */; };
 		1896A17D2585E950006E8B4B /* OrderModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A17C2585E950006E8B4B /* OrderModelData.swift */; };
+		1896A1802585F51D006E8B4B /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896A17F2585F51D006E8B4B /* OrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		1896A1672585DEAD006E8B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1896A1752585E8FA006E8B4B /* OrderModelDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModelDataTest.swift; sourceTree = "<group>"; };
 		1896A17C2585E950006E8B4B /* OrderModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModelData.swift; sourceTree = "<group>"; };
+		1896A17F2585F51D006E8B4B /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		1896A1422585DEA9006E8B4B = {
 			isa = PBXGroup;
 			children = (
+				1896A17E2585F4E1006E8B4B /* ViewModel */,
 				1896A17B2585E938006E8B4B /* Model */,
 				1896A14D2585DEA9006E8B4B /* ShopeApp */,
 				1896A1642585DEAD006E8B4B /* ShopeAppTests */,
@@ -111,6 +114,14 @@
 				1896A17C2585E950006E8B4B /* OrderModelData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1896A17E2585F4E1006E8B4B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1896A17F2585F51D006E8B4B /* OrderViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 				1896A1762585E8FA006E8B4B /* OrderModelDataTest.swift in Sources */,
 				1896A1662585DEAD006E8B4B /* ShopeAppTests.swift in Sources */,
 				1896A17D2585E950006E8B4B /* OrderModelData.swift in Sources */,
+				1896A1802585F51D006E8B4B /* OrderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
